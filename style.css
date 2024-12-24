@@ -1,0 +1,259 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #f39c12;
+}
+
+/* Home Section */
+.home {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
+}
+
+.home h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.home p {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links a {
+    font-size: 2rem;
+    color: white;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+    color: #f39c12;
+}
+
+/* About Section */
+.about {
+    padding: 2rem 1rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Skills Section */
+.skills {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    text-align: center;
+    max-width: 150px;
+}
+
+.skill img {
+    max-width: 100px;
+    margin-bottom: 0.5rem;
+    transition: transform 0.3s;
+}
+
+.skill img:hover {
+    transform: scale(1.1);
+}
+
+/* Contact Section */
+.contact {
+    padding: 2rem 1rem;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    width: 100%;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 0.8rem;
+    background-color: #6a11cb;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2575fc;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+}
+/* Education Section */
+.education {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.education-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.education-details {
+    max-width: 500px;
+    text-align: left;
+    font-family: 'Arial', sans-serif;
+    color: #333; /* Neutral text color */
+}
+
+.education-details h3 {
+    font-size: 0.2rem;
+    margin-bottom: 10px;
+    color: #2c3e50; /* Primary header color */
+}
+
+.education-details p {
+    font-size: 1rem;
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+.education-photo {
+    max-width: 300px;
+    text-align: center;
+}
+
+.education-photo img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease;
+}
+
+.education-photo img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    .education-container {
+        flex-direction: column;
+    }
+
+    .education-photo {
+        max-width: 80%;
+    }
+}
